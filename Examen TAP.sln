@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Examen TAP", "Examen TAP\Examen TAP.vcxproj", "{2FAF04E2-269A-4AC5-9EDC-5557BBAAB416}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FAF04E2-269A-4AC5-9EDC-5557BBAAB416}.Debug|x64.ActiveCfg = Debug|x64
+		{2FAF04E2-269A-4AC5-9EDC-5557BBAAB416}.Debug|x64.Build.0 = Debug|x64
+		{2FAF04E2-269A-4AC5-9EDC-5557BBAAB416}.Debug|x86.ActiveCfg = Debug|Win32
+		{2FAF04E2-269A-4AC5-9EDC-5557BBAAB416}.Debug|x86.Build.0 = Debug|Win32
+		{2FAF04E2-269A-4AC5-9EDC-5557BBAAB416}.Release|x64.ActiveCfg = Release|x64
+		{2FAF04E2-269A-4AC5-9EDC-5557BBAAB416}.Release|x64.Build.0 = Release|x64
+		{2FAF04E2-269A-4AC5-9EDC-5557BBAAB416}.Release|x86.ActiveCfg = Release|Win32
+		{2FAF04E2-269A-4AC5-9EDC-5557BBAAB416}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78514746-CFD6-4AB1-BD30-031DF6097C75}
+	EndGlobalSection
+EndGlobal
