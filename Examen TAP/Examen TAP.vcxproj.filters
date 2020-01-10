@@ -29,5 +29,11 @@
     <None Include="data3.in">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="data4.in">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="data5.in">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

@@ -173,10 +173,79 @@ void permut_ciclice()
 
 #pragma endregion
 
+#pragma region matrice 2^n*2^n
+
+int matrix[1000][1000];
+
+int recurs_matrice(int x, int y, int dim, int cautat,int offset)
+{
+	if (dim == 1)
+	{
+		matrix[y][x] = offset + 1;
+		return offset + 1;
+	}
+
+	int each = (dim*dim)/4;
+
+	
+	if (cautat <= offset+ each)
+	{
+		//stanga sus
+		return recurs_matrice(x, y, dim / 2, cautat, offset);
+	}
+	else if (cautat <= offset+each * 2)
+	{
+		//dreapta jos
+		return recurs_matrice(x + dim / 2, y + dim / 2, dim / 2, cautat, offset + each);
+	}
+	else if (cautat <=offset+ each * 3)
+	{
+		//dreapta sus
+		return recurs_matrice(x + dim / 2, y, dim / 2, cautat, offset + each * 2);
+	}
+	else
+	{
+		//stanga jos
+		return recurs_matrice(x, y + dim / 2, dim / 2, cautat, offset + each * 3);
+	}
+}
+
+void matrice_2n_2n()
+{
+	ifstream fin("data4.in");
+
+	int n,x;
+	fin >> n>>x;
+
+	recurs_matrice(0, 0, pow(2, n), x, 0);
+
+	for (int i = 0; i < pow(2, n); i++)
+	{
+		for (int j = 0; j < pow(2, n); j++)
+		{
+			printf("%5d ", matrix[i][j]);
+		}
+		printf("\n");
+	}
+}
+
+#pragma endregion
+
+#pragma region Inmultire de matrice
+
+void inmultmatrix()
+{
+	ifstream("data5.in");
+
+
+}
+
+#pragma endregion
+
 
 int main()
 {
-	permut_ciclice();
+	matrice_2n_2n();
 
 	return 0;
 }

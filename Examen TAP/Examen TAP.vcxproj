@@ -129,6 +129,8 @@
     <None Include="data.in" />
     <None Include="data2.in" />
     <None Include="data3.in" />
+    <None Include="data4.in" />
+    <None Include="data5.in" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
